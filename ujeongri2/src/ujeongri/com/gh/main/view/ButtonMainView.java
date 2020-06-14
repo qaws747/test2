@@ -28,28 +28,28 @@ public class ButtonMainView extends JFrame {
 		btn1.setBounds(500, 600, 500, 90);
 		btn1.setBorderPainted(false);
 		
-//		btn1.addActionListener(new ActionListener() {
-//			
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				JTextField id = new JTextField(30);
-//				
-//				panel2.add(new JLabel("ID"));
-//				panel2.add(id);
-//				
-//				JPasswordField password = new JPasswordField(30);
-//				panel2.add(new JLabel("PASSWORD"));
-//				panel2.add(password);
-//				
-//				JButton button = new JButton("로그인");
-//				
-//				String text = "id= " + id.getText() + "\n";
-//				text += "password" + password.getPassword() + "\n";
-//				
-//				
-//			}
-//		});
-		System.out.println("dsfkjldf");
+		btn1.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JTextField id = new JTextField(30);
+				
+				panel2.add(new JLabel("ID"));
+				panel2.add(id);
+				
+				JPasswordField password = new JPasswordField(30);
+				panel2.add(new JLabel("PASSWORD"));
+				panel2.add(password);
+				
+				JButton button = new JButton("로그인");
+				
+				String text = "id= " + id.getText() + "\n";
+				text += "password" + password.getPassword() + "\n";
+				
+				
+			}
+		});
+		System.out.println("123455");
 		
 		ImageIcon gameover = new ImageIcon("src/images/gameover.png");
 		JButton btn2 = new JButton(gameover);
