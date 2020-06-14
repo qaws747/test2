@@ -49,7 +49,6 @@ public class ButtonMainView extends JFrame {
 				
 			}
 		});
-		System.out.println("123455");
 		
 		ImageIcon gameover = new ImageIcon("src/images/gameover.png");
 		JButton btn2 = new JButton(gameover);
