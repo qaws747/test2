@@ -2,8 +2,7 @@ package ujeongri.com.gh.main.view;
 
 public class LoginView {
 
-	private void syso() {
-		// TODO Auto-generated method stub
-
+	public void sdfsd() {
+		System.out.println("djlfsjfldk");
 	}
 }
