@@ -21,7 +21,7 @@ public class MainView extends JFrame {
 	
 	public MainView() {
 		super("우 - 정 - 리");
-		setLayout(null);
+//		setLayout(null);
 
 		this.setBounds(100, 100, 1440, 900);
 		

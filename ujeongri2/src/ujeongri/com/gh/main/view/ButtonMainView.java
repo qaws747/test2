@@ -49,8 +49,8 @@ public class ButtonMainView extends JFrame  {
 		});
 		
 		//버튼2번 설정
-		ImageIcon gameover = new ImageIcon("src/images/gameover.png");
-		JButton btn2 = new JButton(gameover);
+		ImageIcon exit = new ImageIcon("src/images/exit.png");
+		JButton btn2 = new JButton(exit);
 		btn2.setBounds(500, 700, 500, 90);
 		btn2.setBorderPainted(false);
 		//버튼2번 액션 설정
