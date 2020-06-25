@@ -1,19 +1,13 @@
 
 package ujeongri.com.gh.game.view;
 
-import java.awt.Component;
-import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-
-import ujeongri.com.gh.main.view.ButtonMainView;
 
 public class ShopView extends JFrame{
 	
@@ -29,13 +23,13 @@ public class ShopView extends JFrame{
 
 		JPanel panel = new JPanel();
 		//shop map 설정
-		Image shopIcon = new ImageIcon("src/images/shopmap.png").getImage().getScaledInstance(2160, 1350, Image.SCALE_SMOOTH);
+		Image shopIcon = new ImageIcon("src/images/shopmap.png").getImage().getScaledInstance(2160, 1350, 0);
 		JLabel mapLabel = new JLabel(new ImageIcon(shopIcon));
-		mapLabel.setBounds(0, 0, 1440, 900);
+		mapLabel.setBounds(0, 0, 2160, 1350);
 		
 		//빱이 설정
-		ImageIcon pappIcon = new ImageIcon("src/images/antppap.png");
-		JButton pappButton = new JButton();
+		ImageIcon pappIcon = new ImageIcon("src/images/ppap/antppap.png");
+		JButton pappButton = new JButton(pappIcon);
 		pappButton.setBounds(300, 300, 44, 98);
 		pappButton.setBorderPainted(false);
 		
@@ -54,6 +48,13 @@ public class ShopView extends JFrame{
 //			
 //		});
 		
+		//왕눈이 
+		ImageIcon wangnunIcon = new ImageIcon("src/images/wangnunramgi/wangnun.png");
+		JButton wangnunButton = new JButton(wangnunIcon);
+		wangnunButton.setBounds(200, 500, 44, 98);
+		wangnunButton.setBorderPainted(false);
+		
+		mapLabel.add(wangnunButton);
 		mapLabel.add(pappButton);
 		panel.add(mapLabel);
 
